@@ -8,7 +8,11 @@ const FAQs = () => {
     <section className="faqs">
       <div className="container faqs__container">
         <SectionHead icon={<FaQuestion />} title="FAQS" />
-        <div className="faqs__wrapper">
+        <div
+          className="faqs__wrapper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {faqs.map(({ id, question, answer }) => {
             return <FAQ key={id} question={question} answer={answer} />;
           })}

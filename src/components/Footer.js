@@ -1,47 +1,40 @@
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-item">
-          <div>
-            <h2>About GymFusionHub</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-              possimus vitae veniam deleniti. Veniam possimus ea illo sunt velit
-              cupiditate nobis nostrum.
-            </p>
-          </div>
-          <div className="footer-portfolio">
-            <h2>Portfolio</h2>
-            <div className="footer-links">
-              <Link to="/" className="footer-link">
-                Home
-              </Link>
-              <Link to="#about" className="footer-link">
-                About
-              </Link>
-              <Link to="#websites" className="footer-link">
-                websites
-              </Link>
-              <Link to="#contact" className="footer-link">
-                contact
-              </Link>
-            </div>
-          </div>
-          <div className="footer-contact">
-            <h2>contact me</h2>
-            <Link to="+91:8299310513">8299310513</Link>
-            <Link to="mailto:mishraa03041997@gmail.com">
-              mishraa03041997@gmail.com
-            </Link>
-          </div>
+      <div className="container footer__container">
+        
+        {/* Logo / Name */}
+        <h3 className="footer__logo">
+          Harsh<span>.dev</span>
+        </h3>
+
+        {/* Links */}
+        <div className="footer__links">
+          <Link to="/">About</Link>
+          <Link to="/portfolio">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
-        <h3 className="copyright">
-          copyright@123 the website is developed by harsh mishra
-        </h3>
+        {/* Social Icons */}
+        <div className="footer__socials">
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <FaTwitter />
+          </a>
+        </div>
+
+        {/* Copyright */}
+        <p className="copyright">
+          © {new Date().getFullYear()} Harsh Mishra. All rights reserved.
+        </p>
       </div>
     </footer>
   );

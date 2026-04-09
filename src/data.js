@@ -1,4 +1,8 @@
-import { SiOpenaigym } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
+import { BsDatabaseAdd } from "react-icons/bs";
+import { PiCodeSimple } from "react-icons/pi";
+import { MdCastForEducation } from "react-icons/md";
+import { SiMinds, SiWipro } from "react-icons/si";
 
 export const links = [
   {
@@ -6,160 +10,148 @@ export const links = [
     path: "/",
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Portfolio",
+    path: "/portfolio",
   },
+
   {
-    name: "Gallery",
-    path: "/gallery",
-  },
-  {
-    name: "Trainers",
-    path: "/trainers",
-  },
-  {
-    name: "Plans",
-    path: "/plans",
+    name: "Contact",
+    path: "/contact",
   },
 ];
 
-export const programs = [
+export const services = [
   {
     id: 1,
-    icon: <SiOpenaigym />,
-    title: "Program One",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/111",
+    icon: <FaCode />,
+    title: "Frontend",
+    info: "Building responsive and high-performance user interfaces using React, JavaScript, and modern web technologies.",
   },
   {
     id: 2,
-    icon: <SiOpenaigym />,
-    title: "Program Two",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/222",
+    icon: <BsDatabaseAdd />,
+    title: "Backend",
+    info: "Developing scalable server-side applications and REST APIs using Node.js, ensuring performance and reliability.",
   },
   {
     id: 3,
-    icon: <SiOpenaigym />,
-    title: "Program Three",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/333",
-  },
-  {
-    id: 4,
-    icon: <SiOpenaigym />,
-    title: "Program Four",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/444",
+    icon: <PiCodeSimple />,
+    title: "UI/UX",
+    info: "Designing intuitive and visually appealing user experiences with a focus on usability, accessibility, and modern design trends.",
   },
 ];
 
-export const values = [
+export const about = [
   {
     id: 1,
-    icon: <SiOpenaigym />,
-    title: "Value One",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    icon: <SiMinds />,
+    title: "Experience",
+    desc: "4+ years ",
   },
   {
     id: 2,
-    icon: <SiOpenaigym />,
-    title: "Value Two",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    icon: <SiWipro />,
+    title: "Company",
+    desc: "Wipro Limited",
   },
   {
     id: 3,
-    icon: <SiOpenaigym />,
-    title: "Value Three",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    icon: <MdCastForEducation />,
+    title: "Education",
+    desc: "(BTECH)",
+  },
+];
+
+export const frontend = [
+  {
+    id: 1,
+    title: "ReactJS",
+  },
+  {
+    id: 2,
+    title: "Javascript",
+  },
+  {
+    id: 3,
+    title: "Tailwind CSS",
   },
   {
     id: 4,
-    icon: <SiOpenaigym />,
-    title: "Value Four",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    title: "HTML",
+  },
+  {
+    id: 5,
+    title: "CSS",
+  },
+  {
+    id: 6,
+    title: "Git",
+  },
+];
+
+export const backend = [
+  {
+    id: 1,
+    title: "Python",
+  },
+  {
+    id: 2,
+    title: "SQL",
+  },
+  {
+    id: 3,
+    title: "Firebase",
+  },
+  {
+    id: 4,
+    title: "MongoDB",
+  },
+  {
+    id: 5,
+    title: "Node",
+  },
+  {
+    id: 6,
+    title: "Mysql",
   },
 ];
 
 export const faqs = [
   {
     id: 1,
-    question: "How often should I exercise?",
+    question: "What is your background and experience?",
     answer:
-      "Consectetur adipisicing elit. Non ipsa dolorem, rem consequatur eum omnis ex, fuga temporibus qui nesciunt odio aliquam commodi culpa inventore ut similique repellendus perferendis sint!",
+      "I hold a Bachelor of Technology (B.Tech) degree and have been working in the field of web development for 4+ years. My experience includes various roles in frontend development and design, allowing me to build visually appealing and user-friendly websites.",
   },
   {
     id: 2,
-    question: "What time of day is best to work out?",
+    question: "What services do you offer?",
     answer:
-      "Distinctio nihil blanditiis accusantium atque, quo maxime inventore eum! Cum dolorem quibusdam amet et qui. Eos, omnis beatae? Quas, est at! Molestiae quidem ab soluta exercitationem culpa nostrum iusto illum qui non a harum deserunt atque commodi at velit.",
+      "I specialize in frontend development, which includes creating interactive and responsive user interfaces using technologies such as HTML, CSS, JavaScript, and modern frontend frameworks like React and Nodejs for backend .",
   },
   {
     id: 3,
-    question: "How long should my workouts be?",
+    question: "Can you customize a project to fit my specific needs?",
     answer:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+      "Absolutely! I pride myself on tailoring solutions to meet each client's unique needs and goals. Let's discuss your specific requirements to create a customized solution.",
   },
   {
     id: 4,
-    question: "Do I need to warm up before my workouts?",
+    question: "How long does it take to complete a project?",
     answer:
-      "Molestiae quidem ab soluta exercitationem culpa nostrum iusto illum qui non a harum deserunt atque commodi at velit, consequatur quibusdam dignissimos cum labore possimus placeat consectetur nisi cupiditate? Qui totam est omnis dolor nobis quisquam veritatis a!",
+      "Project timelines can vary depending on the complexity and scope. I typically provide estimated project timelines after discussing the specific details and requirements of a project.",
   },
   {
     id: 5,
-    question: "Should I do strength training, cardio or both?",
+    question: "What is your pricing structure?",
     answer:
-      "Maiores fuga, cum praesentium esse laudantium! Distinctio nihil blanditiis accusantium atque, quo maxime inventore eum! Cum dolorem quibusdam amet et qui.",
+      "My pricing structure depends on the project's size, complexity, and duration. I offer both hourly and fixed-rate pricing options, which can be discussed further during project consultation.",
   },
   {
     id: 6,
-    question: "Should I lift weights for strength training?",
+    question: "What projects are you currently working on?",
     answer:
-      "Quas, est at! Molestiae quidem ab soluta exercitationem culpa nostrum iusto illum qui non a harum deserunt atque commodi at velit, consequatur quibusdam dignissimos cum labore possimus placeat consectetur nisi cupiditate.",
-  },
-];
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "Diana Ayi",
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.",
-    job: "Student",
-    avatar: require("./images/avatar1.jpg"),
-  },
-  {
-    id: 2,
-    name: "Daniel Vinyo",
-    quote:
-      "Harum quaerat hic consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum this and that odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
-    job: "Software Egineer",
-    avatar: require("./images/avatar2.jpg"),
-  },
-  {
-    id: 3,
-    name: "Edem Quist",
-    quote:
-      "Quaerat hic praesentium consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
-    job: "University Lecturer",
-    avatar: require("./images/avatar3.jpg"),
-  },
-  {
-    id: 4,
-    name: "Grace Lavoe",
-    quote:
-      "Cupiditate deleniti sint consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
-    job: "Talking Parrot",
-    avatar: require("./images/avatar4.jpg"),
-  },
-  {
-    id: 5,
-    name: "Nana Yaa Dankwa",
-    quote:
-      "Maxime minima cumque sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.",
-    job: "Pharmacist",
-    avatar: require("./images/avatar5.jpg"),
+      "I'm currently working on various frontend development projects, each with its unique challenges and opportunities. Feel free to inquire about my current projects or discuss potential collaborations.",
   },
 ];
 
@@ -229,84 +221,60 @@ export const plans = [
   },
 ];
 
-const Trainer1 = require("./images/trainer1.jpg");
-const Trainer2 = require("./images/trainer2.jpg");
-const Trainer3 = require("./images/trainer3.jpg");
-const Trainer4 = require("./images/trainer4.jpg");
-const Trainer5 = require("./images/trainer5.jpg");
-const Trainer6 = require("./images/trainer6.jpg");
+const portfolio1 = require("./images/portfolio.mp4");
+const portfolio2 = require("./images/video2.mp4");
+const portfolio3 = require("./images/portfolio.mp4");
+const portfolio4 = require("./images/video4.mp4");
+const portfolio5 = require("./images/video5.mp4");
+const portfolio6 = require("./images/video3.mp4");
 
-export const trainers = [
+export const portfolios = [
   {
     id: 1,
-    image: Trainer1,
-    name: "John Doe",
-    job: "Aerobic Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio1,
+    name: "Harsh Design Hub",
+    job: "A movie website",
+    github: "https://github.com/Harsh0304/GymFusionHub",
+    link: "https://harshDesignHub.netlify.app/",
   },
   {
     id: 2,
-    image: Trainer2,
-    name: "Daniel vinyo",
-    job: "Speed Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio2,
+    name: "Gym Fusion Hub",
+    job: "A foodies website",
+    github: "https://github.com/Harsh0304/GymFusionHub",
+    link: "https://gym-fusion-hub.netlify.app/",
   },
   {
     id: 3,
-    image: Trainer3,
-    name: "Edem Quist",
-    job: "Flexibility Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio3,
+    name: "MovieLive",
+    job: "a movie website",
+    github: "https://github.com/Harsh0304/MovieLive",
+    link: "https://movielive.netlify.app",
   },
   {
     id: 4,
-    image: Trainer4,
-    name: "Shatta Wale",
-    job: "Body Composition Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio4,
+    name: "PackageZone",
+    job: "a website for npm packages",
+    github: "https://github.com/Harsh0304/packageZone",
+    link: "https://packagezone.netlify.app",
   },
   {
     id: 5,
-    image: Trainer5,
-    name: "Diana Ayi",
-    job: "Circuit Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio5,
+    name: "ClinicalTrialsCommandCenter",
+    job: "a clinical trials website",
+    github: "https://github.com/Harsh0304/clinicalTrials",
+    link: "https://clinicaltrialscommandcenter.netlify.app/",
   },
   {
     id: 6,
-    image: Trainer6,
-    name: "Wayne Carter",
-    job: "Physical Intelligence Trainer",
-    socials: [
-      "https://instagram.com/",
-      "https://twitter.com/",
-      "https://facebook.com/",
-      "https://linkedin.com/",
-    ],
+    image: portfolio6,
+    name: "Holi Fest Joy",
+    job: "a holiday website",
+    github: "https://github.com/Harsh0304/HoliFestJoy",
+    link: "https://holi-fest-joy.netlify.app",
   },
 ];

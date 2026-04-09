@@ -1,0 +1,48 @@
+.trainers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.trainer {
+  padding: 0 0 2rem 0;
+  border-radius: 8px;
+}
+.trainer h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary-varient);
+  margin-top: 1.2rem;
+}
+.trainer p {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+.trainer__img img {
+  height: 19rem;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: center;
+}
+.github {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  margin-left: 1rem;
+}
+.github:hover {
+  color: black;
+}
+
+/* media queries for medium devices */
+@media screen and (max-width: 1024px) {
+  .trainers__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* media queries for small devices */
+@media screen and (max-width: 600px) {
+  .trainers__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

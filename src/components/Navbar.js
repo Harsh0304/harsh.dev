@@ -7,14 +7,25 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 20) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNav);
 
   return (
-    <nav>
+    <nav className={scrollNav ? "nav-active" : ""}>
       <div className="container nav__container">
         <Link to="/" className="logo">
           <h3>
-            GymFusion
-            <span>Hub</span>
+            Harsh
+            <span>.dev</span>
           </h3>
         </Link>
 

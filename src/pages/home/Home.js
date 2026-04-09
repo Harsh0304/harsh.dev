@@ -1,15 +1,17 @@
 import FAQs from "../../components/FAQs";
 import MainHeader from "../../components/MainHeader";
-import Program from "../../components/Program";
-import Values from "../../components/Values";
+import Services from "../../components/Services";
+import About from "../../components/About";
 import "./home.css";
+import Skills from "../../components/Skills";
 
 const Home = () => {
   return (
     <>
       <MainHeader />
-      <Program />
-      <Values />
+      <Services />
+      <About />
+      <Skills />
       <FAQs />
     </>
   );

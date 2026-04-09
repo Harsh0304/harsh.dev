@@ -1,6 +1,6 @@
 import "./gallery.css";
 import Header from "../../components/Header";
-import image from "../../images/header_bg_3.jpg";
+import image from "../../images/web1.png";
 
 const Gallery = () => {
   const galleryLenght = 15;
@@ -9,7 +9,6 @@ const Gallery = () => {
     images.push(require(`../../images/gallery${i}.jpg`));
   }
 
-  console.log(images);
   return (
     <>
       <Header title="Our Gallery" image={image}>
