@@ -1,4 +1,5 @@
 import Card from "../UI/Card";
+
 const PortfolioSingle = ({ image, name, job, github, link }) => {
   return (
     <Card className="trainer">
@@ -11,7 +12,6 @@ const PortfolioSingle = ({ image, name, job, github, link }) => {
             borderRadius: "1rem",
           }}
           src={image}
-          // autoPlay
           onMouseOver={(e) => e.target.play()}
           onMouseLeave={(e) => {
             e.target.currentTime = 0;
@@ -21,13 +21,26 @@ const PortfolioSingle = ({ image, name, job, github, link }) => {
           loop
         />
       </div>
+
       <h3>{name}</h3>
       <p>{job}</p>
+
       <div className="portfolio__actions">
-        <a href={link} target="_blank" className="btn btn__sm">
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn__sm"
+        >
           Live
         </a>
-        <a href={github} target="_blank" className="btn github">
+
+        <a
+          href={github}
+          target="_blank"
+          rel="noreferrer"
+          className="btn github"
+        >
           Github
         </a>
       </div>

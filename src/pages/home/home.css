@@ -282,26 +282,33 @@ header {
 /* media queries for medium devices */
 @media screen and (max-width: 1024px) {
   /* ==========header =======*/
-  header {
-    padding: 0px 0px 7rem 0px;
+
+  .header__image-lg {
+    display: none;
   }
+
   .header__container {
-    gap: 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+    left: 0; /* FIX alignment issue */
+    padding: 6rem 2rem 0;
+    position: relative; /* FIX absolute issue */
   }
+
   .right h1 {
-    color: var(--color-white);
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 3rem;
   }
-  .right p {
-    margin-top: 1rem;
+
+  .typingText {
     width: 100%;
-    font-size: 1rem;
-    line-height: 1.9;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--color-dark);
+    font-size: 1.8rem;
   }
+
+  .right p {
+    width: 100%;
+  }
+  
+
 
   /* =============programs ===========*/
   .programs__wrapper {
@@ -331,6 +338,25 @@ header {
 /* media queries for small devices */
 @media screen and (max-width: 600px) {
   /* ==========header ==========*/
+  .header__container {
+    grid-template-columns: 1fr;
+    padding: 4rem 1rem 0;
+    position: relative;
+    left: 0;
+  }
+
+  .right h1 {
+    font-size: 2.2rem;
+  }
+
+  .typingText {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.95rem;
+  }
   .header__container {
     grid-template-columns: 1fr;
   }
