@@ -1,32 +1,31 @@
 header {
   width: 100%;
-  position: relative;
-  padding: 0px 0px 6rem 0px;
-  top: 0;
   background: url(../../images/bg.avif);
   overflow: hidden;
   background-position: center;
   object-fit: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 .hero__container {
-  position: relative;
   z-index: 1;
 }
 .header__container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
   gap: 4%;
   place-items: center;
   padding-top: 10rem;
-  position: absolute;
-  top: 0;
-  left: 140px;
   z-index: 2;
   margin: 0 auto;
 }
-
+.left{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 /* .header__image-bg {
   height: 28rem;
   width: 25rem;
@@ -280,9 +279,35 @@ header {
   color: #777;
 }
 /* media queries for medium devices */
+
+@media screen and (max-width: 1280px) {
+
+  .header__container {
+    grid-template-columns: 55% 45%; 
+    gap: 2rem; 
+    padding: 8rem 2rem 0;
+  }
+
+  .right h1 {
+    font-size: 4.5rem;
+  }
+
+  .typingText {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .header__image-lg img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   /* ==========header =======*/
-
+  header{
+    min-height: 65vh;
+  }
   .header__image-lg {
     display: none;
   }
@@ -367,7 +392,8 @@ header {
     width: 100%;
   }
   header {
-    padding: 0px 0px 6rem 0px;
+    height: auto;
+    padding: 5rem 0rem;
     text-align: center;
   }
   .skills__container {

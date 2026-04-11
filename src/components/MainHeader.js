@@ -6,8 +6,8 @@ import hero from "../images/hero.svg";
 const MainHeader = () => {
   return (
     <header id="menu">
-      <div className="hero__container">
-        <div className="container header__container">
+      <div className="container hero__container">
+        <div className=" header__container">
           <div className="right" data-aos="fade-right">
             {/* <h3>Hi there!</h3> */}
             <h1>I'm Harsh</h1>

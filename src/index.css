@@ -35,6 +35,7 @@ body {
   background-position: center;
   color: var(--color-light);
   line-height: 1.7;
+  overflow-x: hidden !important;
 }
 
 h1,
@@ -223,9 +224,15 @@ radial-gradient(
 }
 
 /* media queries for medium devices */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
+    overflow-x: hidden;
   }
   h1 {
     font-size: 2rem;
