@@ -332,6 +332,14 @@ header {
   .right p {
     width: 100%;
   }
+
+   .skills__container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .skills__wrapper{
+    font-size: 1.4rem;
+  }
   
 
 
@@ -399,6 +407,10 @@ header {
   .skills__container {
     flex-direction: column;
     gap: 4rem;
+  }
+  .skills__wrapper{
+    gap: 1.3rem;
+    font-size: 1rem;
   }
 
   /* ===========programs============== */
