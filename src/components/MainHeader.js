@@ -19,7 +19,7 @@ const MainHeader = () => {
             <p>
               I build fast, responsive, and scalable web applications using modern technologies like React , JavaScript and NextJS. 
             </p>
-            <Link to="/plans" className="btn header__btn">
+            <Link to="/contact" className="btn header__btn">
               Contact me
             </Link>
           </div>

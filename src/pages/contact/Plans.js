@@ -1,22 +1,21 @@
+import { useNavigate } from "react-router-dom";
 import "./plans.css";
-import view1 from "../../images/bg.avif";
+
 const Plans = () => {
+  const navigate=useNavigate()
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+   alert("Email send successfully..")
+   navigate("/")
+};
+
   return (
     <>
-      <img
-        src={view1}
-        alt="bg"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          borderRadius: "1rem",
-          background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.3))",
-        }}
-      />
+     
       <section className="container">
-        <form className="form_container">
+        <form className="form_container" onSubmit={sendEmail}>
           <h1>Get in touch</h1>
           <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -24,6 +23,7 @@ const Plans = () => {
               type="text"
               className="form-control"
               id="name"
+              name="name"
               placeholder="Your Name"
             />
           </div>
@@ -33,6 +33,7 @@ const Plans = () => {
               type="email"
               className="form-control"
               id="email"
+              name="email"
               placeholder="Your Email"
             />
           </div>
@@ -42,6 +43,7 @@ const Plans = () => {
               placeholder="Message"
               className="form-control"
               id="message"
+              name="message"
               rows="3"
             ></textarea>
           </div>

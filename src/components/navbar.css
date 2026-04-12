@@ -115,6 +115,6 @@ nav {
 
 @media screen and (max-width: 600px) {
   .nav__container{
-    max-width: 350px;
+    max-width: 330px;
   }
 }
